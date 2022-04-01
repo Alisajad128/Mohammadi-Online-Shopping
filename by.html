@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>By Shoes</title>
+	<link rel="stylesheet" type="text/css" href="style-1.css">
+</head>
+<body>
+	<div class="menu">
+		<div class="col-1" id="p-1">
+			<img src="images/i3.png" class="menu-icon">
+		</div>
+		<div class="col-1">
+			<h1 class="heading">فروشگاه آنلاین محمدی</h1>
+		</div>
+		<div class="col-1" id="p-3">
+			<img src="images/menu-icon.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+	</div>
+	<div class="options" id="MenuItems">
+				<li id="home"><a href="index.html" class="btn"><img src="images/pic-12.png" id="icon-1">اصـلی</a>
+				<li id="Clothes"><a href="" class="btn"><img src="images/pic-19.jpeg" id="icon-1">لبــاس</a>
+				<ul id="dropdown-clothes">
+        <li><a href="winter-clothes.html" class='btn'>زمستانی</a></li>
+        <li><a href="spring-clothes.html" class='btn'>بهاری</a></li>
+      </ul>
+      </li>
+				<li id="Shoes"><a href="" class="btn"><img src="images/pic-18.png" id="icon-1">بـــوت</a>
+				<ul id="dropdown-shoes">
+        <li><a href="men-shoes.html" class='btn'>مــردانه</a></li>
+        <li><a href="women-shoes.html" class='btn'>زنــانه</a></li>
+      </ul></li>
+				<li id="Phones"><a href="" class="btn"><img src="images/pic-17.png" id="icon-1">موبایل</a>
+				<ul id="dropdown-phones">
+        <li><a href="glaxay-phone.html" class='btn'>گلکسی</a></li>
+        <li><a href="iphone-phone.html" class='btn'>آیـفون</a></li>
+      </ul></li>
+				<li id="Books"><a href="" class="btn"><img src="images/pic-16.jpeg" id="icon-1">کتــاب</a>
+				<ul id="dropdown-books">
+        <li><a href="historical-books.html" class='btn'>تاریخی</a></li>
+        <li><a href="roman-books.html" class='btn'>رومان</a></li>
+      </ul></li>
+      	<li id="About"><a href="" class="btn"><img src="images/pic-15.png" id="icon-1">درباره</a>
+				<ul id="dropdown-about">
+        <li><a href="about-page.html" class='btn'>برنامه</a></li>
+        <li><a href="about-developer.html" class='btn'>سـازنده</a></li>
+      </ul></li>
+	</div>
+	<div class="bar">
+		<div class="by-form">
+		<h2>فورمه خرید</h2>
+		</div>
+		<hr>
+		<form>
+			نام
+			<input type="text" id="Fname" name="firstname" placeholder="نام خود را وارد نماید." required />
+			کارت بانکی
+			<input type="number" id="Bankid" name="bankid" placeholder="شماره کارت بانکی خود را وارد نماید" required /><br>
+			تخلص
+			<input type="text" id="Lname" name="lastname" placeholder="تخلص خود را وارد نماید"نrequired />
+			ایمـیل آدرس
+				<input type="email" id="Email" name="email" placeholder="ایمیل خود را وارد نماید" required />
+				<br>
+				تلفن
+			<input type="tel" id="Pnum" pattern="07[0-9]{8}" name="Phone" placeholder="07xxxxxxxx" title="07xxxxxxxx" required />
+			آدرس دقـیـق
+			<textarea id="Address" placeholder="آدرس دقیق خود را وارد نماید" required></textarea>
+
+			<input id="submit" type="submit" name="submit" value="خریداری"  />
+			
+		</form>
+	</div>
+	<div class="footer">
+		<div class="footer-1">
+		<h2 >:ما را دنبال نماید</h2>
+		<ul>
+			<li><a href="https://www.whatsapp.com/" class="follow-icon"><img src="images/pic-20.png"></a></li>
+			<li><a href="https://www.facebook.com/alisajad.mohammadi.50" class="follow-icon"><img src="images/pic-42.png"></a></li>
+			<li><a href="https://www.instagram.com/" class="follow-icon"><img src="images/pic-43.jpeg"></a></li>
+			<li><a href="https://www.twitter.com/" class="follow-icon"><img src="images/pic-44.png"></a></li>
+		</ul>
+		</div>
+		<div class="footer-2">
+			<h2 >:سایت های مرتبط</h2>
+		<ul>
+			<li><a href="#" class="follow-icon" style="text-decoration: none;">Alibab</a></li>
+			<li><a href="#" class="follow-icon" style="text-decoration: none;">Shopping</a></li>
+			<li><a href="#" class="follow-icon" style="text-decoration: none;">Store</a></li>
+			<li><a href="#" class="follow-icon" style="text-decoration: none;">OnStore</a></li>
+		</ul>
+		</div>
+	</div>
+	<script>
+		document.getElementById("MenuItems").style.display = "none";
+
+		function menutoggle(){
+			if (document.getElementById("MenuItems").style.display == "none") 
+			{
+				document.getElementById("MenuItems").style.position = "fixed"
+				document.getElementById("MenuItems").style.display = "block";
+			}
+			else
+			{
+				document.getElementById("MenuItems").style.display = "none";
+			}
+		}
+	</script>
+
+</body>
+</html>
